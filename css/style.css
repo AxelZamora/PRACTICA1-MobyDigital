@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Sora:wght@400;700&display=swap');
+
+:root{
+    --primary: #002c3e;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+body{
+    font-family: Poppins, 'sans-serif';
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-4{
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a{
+    color: var(--dark);
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.btn{
+    padding: 14px 38px;
+    border-width: 0px;
+    border-radius: 10;
+    background-color: var(--primary);
+}
+/* navbar */
+.navbar{
+    background-color: var(--primary);
+    box-shadow: var(--box-shadow);
+    }
+    
+    .navbar-brand img{
+        height: 45px;
+    }
+    
+    .navbar .nav-link{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+/* home */
+.home{
+    background-image: url(../img/fondo2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed    ;
+    position: relative;
+    z-index: 2;
+}
+.home::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(16, 16, 41, 0.6);
+    z-index: -1;
+
+}
+
+/* Roadmap */
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.card-effect{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+.card-effect:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+
+.roadmap h5{
+    color: var(--dark)
+}
+
+.roadmap{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    height: 280px;
+}
+.roadmap::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.roadmap:hover .iconbox{
+    background-color: #fff;
+    color: var(--primary);
+}
+.roadmap:hover h5,
+.roadmap:hover p{
+    color: #fff;
+}
+.roadmap:hover::after{
+    opacity: 1;
+    top:0;
+}
+
+/* modaliad */
+.col-img{
+    background-image: url(../img/galeria3.jfif);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+#modalidad .iconbox{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+/* galeria */
+.galeria   {
+    position: relative;
+    overflow: hidden;
+
+}
+.galeria img{
+    height: auto;
+}
+.galeria:hover img{
+    transform: scale(1.1);
+}
+
+/* contacto */
+form input.form-control{
+    height: 56px;
+}
+#contacto button{
+    background-color: var(--primary);
+}
+
+/* footer */
+.footer-top{
+    padding-bottom: 90px;
+    padding: 90px;
+    background-color: #002c3e;
+}
+.logo{
+    width: 160px;
+}
+.footer-top a{
+    color: var(--body);
+}
+.footer-top a:hover{
+    color: #fff;
+}
+.footer-top h6{
+    color: #fff
+}
+
+
+
+
